@@ -1,0 +1,77 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffccff, #ff99ff);
+    color: white;
+    animation: glitter 5s infinite;
+}
+
+@keyframes glitter {
+    0%, 100% { background: linear-gradient(to right, #ffccff, #ff99ff); }
+    50% { background: linear-gradient(to right, #ff66ff, #ff33cc); }
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 10px gold;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.cake {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    background: pink;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px white;
+}
+
+.candles {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.candles div {
+    width: 10px;
+    height: 30px;
+    background: red;
+    border-radius: 5px;
+    position: relative;
+}
+
+.flame {
+    width: 10px;
+    height: 20px;
+    background: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.2); opacity: 0.8; }
+}
+
+.kisses img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    animation: float 2s infinite alternate;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
